@@ -15,6 +15,7 @@ public abstract class Decorator implements AppearanceComponent {
     @Override
     public void introduce() {
         System.out.println("今天我的穿着打扮是：");
+        //如果子类没有重写父类的方法，那么在父类中调用方法，则是调用当前父类的方法，反之，调用子类的方法
         hairStyle();
         dress();
         shoe();
