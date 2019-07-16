@@ -11,12 +11,14 @@ public class BelleConcreteDectrator extends Decorator {
 
     @Override
     public void dress() {
+        //appearanceComponent是构造器中的接口对象
         appearanceComponent.dress();
         System.out.println("   配上白色手套");
     }
 
     @Override
     public void shoe() {
+        //appearanceComponent是构造器中的接口对象
         appearanceComponent.shoe();
         System.out.println("   配上白色丝筒袜");
     }

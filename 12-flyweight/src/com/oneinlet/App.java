@@ -9,8 +9,9 @@ public class App {
 
     public static void main(String[] args) {
         for (int i = 0; i < 15; i++) {
-            int num = (int) (Math.random() * 12 + 1);
-            int color = (int) (Math.random() * 3 + 1);
+            int num = (int) (Math.random() * 13 + 1);
+            int color = (int) (Math.random() * 4 + 1);
+
             String numStr;
             switch (num) {
                 case 11:

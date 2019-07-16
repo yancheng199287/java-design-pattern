@@ -5,7 +5,7 @@ package com.oneinlet;
  */
 public class App {
     public static void main(String[] args) {
-
+        //appearanceComponent这个接口通过构造函数级联传递
         AppearanceComponent appearanceComponent = new GirlConcreteComponent();
 
         // 包装成美女
@@ -15,6 +15,7 @@ public class App {
         appearanceComponent = new GoddessConcreteDectrator(appearanceComponent);
 
         // 自我介绍下
+
         appearanceComponent.introduce();
 
     }

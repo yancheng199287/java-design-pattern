@@ -14,7 +14,7 @@ public class Singleton {
      * 但是这里的懒汉模式并没有考虑线程安全问题，在多个线程可能会并发调用它的getInstance()方法，导致创建多个实例，
      * 因此需要加锁解决线程同步问题
      */
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if (lazyGuy == null) {
             lazyGuy = new Singleton();
         }

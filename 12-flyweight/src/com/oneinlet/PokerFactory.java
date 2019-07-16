@@ -13,10 +13,10 @@ import java.util.Map;
 public class PokerFactory {
 
 
-    public static final int RED_PEACH = 0;
-    public static final int SQUARE = 1;
-    public static final int BLACK_PEACH = 2;
-    public static final int BLACK_CLUB = 3;
+    public static final int RED_PEACH = 1;
+    public static final int SQUARE = 2;
+    public static final int BLACK_PEACH = 3;
+    public static final int BLACK_CLUB = 4;
 
     private static final PokerFactory factoryPocker = new PokerFactory();
 
@@ -33,16 +33,16 @@ public class PokerFactory {
             abstractPoker = pokerMap.get(color);
         } else {
             switch (color) {
-                case 0:
+                case RED_PEACH:
                     abstractPoker = new RedPeachPoker();
                     break;
-                case 1:
+                case SQUARE:
                     abstractPoker = new SquarePoker();
                     break;
-                case 2:
+                case BLACK_PEACH:
                     abstractPoker = new BlackPeachPoker();
                     break;
-                case 3:
+                case BLACK_CLUB:
                     abstractPoker = new BlackClubPoker();
                     break;
                 default:
