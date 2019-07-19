@@ -8,7 +8,7 @@ package com.oneinlet;
  * @email: 905845006@qq.com
  * @date: 2019/7/19    8:53 AM
  */
-public interface IContainer {
+public interface Container {
     Iterator createrIterator();
 }
 

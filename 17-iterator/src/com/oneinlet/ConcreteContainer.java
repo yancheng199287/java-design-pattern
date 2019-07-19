@@ -9,16 +9,16 @@ package com.oneinlet;
  * @email: 905845006@qq.com
  * @date: 2019/7/19    8:54 AM
  */
-public class TV implements IContainer {
+public class ConcreteContainer implements Container {
     private String[] tvs ;
 
-    public TV() {
+    public ConcreteContainer() {
         System.out.println("open a tv");
     }
 
     @Override
     public Iterator createrIterator() {
-        return new TVChannelIterator(getTvs());
+        return new ConcreteIterator(getTvs());
     }
 
     public String[] getTvs() {

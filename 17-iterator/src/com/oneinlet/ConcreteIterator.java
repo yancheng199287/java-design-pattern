@@ -9,11 +9,11 @@ package com.oneinlet;
  * @email: 905845006@qq.com
  * @date: 2019/7/19    8:55 AM
  */
-public class TVChannelIterator implements Iterator {
+public class ConcreteIterator implements Iterator {
     private String[] tvChannel ;
     private int current = 0;
 
-    public TVChannelIterator(String[] tvChannel) {
+    public ConcreteIterator(String[] tvChannel) {
         this.tvChannel = tvChannel;
     }
 
