@@ -17,7 +17,7 @@ public class ProxyMysql implements Mysql {
     private boolean readRedisDB() {
         int num = (int) (Math.random() * 11);
         if(num>5){
-            System.out.println("命中缓存，查询redis数据返回");
+            System.out.println("命中缓存，查询redis数据返回。");
             return true;
         }
         return false;
