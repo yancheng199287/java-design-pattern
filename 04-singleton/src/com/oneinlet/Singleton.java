@@ -1,6 +1,8 @@
 package com.oneinlet;
 
-
+/**
+ * 单例模式
+ */
 public class Singleton {
     private static Singleton lazyGuy = null;
 
