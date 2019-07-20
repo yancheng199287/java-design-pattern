@@ -25,7 +25,7 @@ public class App {
     private static void test1(IHandler projecthandler) {
         projecthandler.handleaskforleave("张三", 1);
         projecthandler.handleaskforleave("李四", 1);
-        System.out.println("-------------------------------");
+        System.out.println("------------------------------- ");
 
     }
 
