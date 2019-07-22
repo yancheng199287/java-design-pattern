@@ -1,7 +1,7 @@
 package com.oneinlet;
 
 /**
- * 观察者模式
+ * 观察者模式 也可叫做发布订阅模式
  * 角色：
  * 1、抽象主题（Subject）：
  * 它把所有观察者对象的引用保存到一个聚集里，每个主题都可以有任何数量的观察者。抽象主题提供一个接口，可以增加和删除观察者对象。
@@ -23,11 +23,18 @@ public class App {
         Subject zhaoliu = new ConcreteSubject("赵六");
         Observer observer = new ConcreteObserver("张老师");
 
+
+        Observer MrWang = new ConcreteObserver("王老师");
+
+        //一个被观察者可以有多个观察者，也就是一个发布可以有多个订阅,一个观察者可以观察多个被观察者,也就是一个订阅可以订阅多个发布
+
         //所有被观察者把观察者注册到观察自己的列表
         zhangsan.registerObserver(observer);
         lisi.registerObserver(observer);
+        lisi.registerObserver(MrWang);
         wangwu.registerObserver(observer);
         zhaoliu.registerObserver(observer);
+
 
         //被观察者做完自己事情通知观察者
         ((ConcreteSubject) lisi).setMessage("已背完卢沟桥课文了");

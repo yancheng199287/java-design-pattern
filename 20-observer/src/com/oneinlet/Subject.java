@@ -1,7 +1,7 @@
 package com.oneinlet;
 
 /**
- * description: 主题 ----被观察者
+ * description: 主题 ----被观察者 发布
  *
  * @author: dawn.he
  * QQ:       905845006

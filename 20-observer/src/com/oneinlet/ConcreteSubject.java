@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * description: 具体主题 ----被观察者实现
+ * description: 具体主题 ----被观察者实现 发布
  *
  * @author: dawn.he
  * QQ:       905845006

@@ -1,7 +1,7 @@
 package com.oneinlet;
 
 /**
- * description: 观察者接口
+ * description: 观察者接口 订阅
  *
  * @author: dawn.he
  * QQ:       905845006
